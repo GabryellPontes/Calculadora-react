@@ -98,7 +98,7 @@ function App() {
         <Button label="x" onClick={handleMulNumbers}/>
         <Button label="/" onClick={handleDivNumbers}/>
         <Button label="c" onClick={handleOnClear}/>
-        <Button label="."/>
+        <Button label="." onClick={() => handleAddNumber('.')} />
         </Row>
         <Row>
         <Button label="7" onClick={() => handleAddNumber('7')}/>
@@ -116,7 +116,7 @@ function App() {
         <Button label="1" onClick={() => handleAddNumber('1')}/>
         <Button label="2" onClick={() => handleAddNumber('2')}/>
         <Button label="3" onClick={() => handleAddNumber('3')}/>
-        <Button label="=" onClick={handleEquals}/>
+        <Button label="=" onClick={handleEquals} />
         </Row>
         <Row>
         <Button label="0" onClick={() => handleAddNumber('0')}/>
